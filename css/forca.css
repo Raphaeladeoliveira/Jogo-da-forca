@@ -1,0 +1,150 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    
+}
+body {
+    width: 100 vw;
+    height: 90vh;
+    margin-top: 10px;
+    background-color: #67C6E3;
+    font-family: "Madimi One", sans-serif; 
+
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+h1, #mensagem{
+    color: #5356FF;
+}
+p, #letras_chutadas {
+    color: #0978f0;
+    border: 1px solid white;
+    padding: 10px;
+}
+p{
+    margin-top: 10px;
+}
+#letras_chutadas{
+    margin-bottom: 10px;
+}
+
+#imagem{
+    
+    width: 234px;
+    height: 272px;
+    background-repeat: no-repeat;
+}
+
+#palavra-secreta{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.89);
+    
+}
+.letras {
+    font-size: 1em;
+    padding: 5px;
+    margin-top: 30px;
+    text-align: center;
+    border-bottom: 3px solid rgb(117, 16, 212);;
+    margin-left: 3px;
+
+}
+#teclado {
+    margin-top: 30px;
+
+}
+.teclas button{
+    width: 24px;
+    height: 24px;
+    margin: 2px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 5px;
+    box-shadow: 0 2px 8px dimgray;
+    border: 1px solid dimgrey;
+    color: rgb(117, 16, 212);
+    font-weight: 900;
+
+}
+.teclas button:hover {
+    transform: scale(1.3);
+}
+#mensagem{
+    font-size: 1.5em;
+    animation: mensagemAnimation 1.5s ease infinite;
+}
+input{
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid rgba(142, 35, 243, 0.589);
+    border-radius: 5px;
+    text-decoration: none;
+    outline: none;
+}
+.inp_btn{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 5px;
+}
+
+#btn_reiniciar, #btn_chutar{
+    border: 0;
+    width: 100px;
+    border-radius: 5px;
+    font-size: 1em;
+    background-color: rgba(142, 35, 243, 0.589);
+    color: white;
+    padding: 5px;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    
+}
+#btn_reiniciar:hover, #btn_chutar:hover{
+    background-color: blueviolet;
+}
+@keyframes mensagemAnimation{
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+}
+@media (min-width:760px){
+    
+    #imagem{
+    width: 254px;
+    height: 292px;
+    }
+    #palavra-secreta{
+        font-size: 1.7rem;
+    }
+    .letras {
+        
+        width: 18px;
+        
+    }
+    .teclas button{
+        width: 28px;
+    }
+    #categoria{
+        font-size: 1.9em;
+    }
+
+}
