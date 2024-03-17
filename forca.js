@@ -1,4 +1,4 @@
-const listaDePalavras = ['manteiga', 'leite', 'praça', 'parque', 'lua']
+const listaDePalavras = ['manteiga', 'leite', 'praça', 'parque', 'lua', 'bola', maquiagem']
 let palavraEscolhida;
 let palavraSecreta;
 let letrasChutadas;
